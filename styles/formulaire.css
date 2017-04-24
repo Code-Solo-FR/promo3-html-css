@@ -1,0 +1,66 @@
+/*
+On commence par annuler les styles
+des ul et li dans le form
+*/
+.formulaire ul,
+.formulaire li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*
+On annule/change le styles 
+des inputs et select
+*/
+.formulaire input,
+.formulaire select {
+    border: 1px solid black;
+}
+
+/*
+On refait le style du bouton
+en mode material design (kinda)
+*/
+.formulaire button {
+    background-color: teal;
+    border: none;
+    color: white;
+    display: block;
+    width: 200px;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+}
+/*
+On enlève le style par défaut
+des fieldset et on les met
+en display flex en ligne
+*/
+.formulaire>fieldset {
+    display:flex;
+    flex-direction: row;
+    border: none;
+}
+
+.formulaire>fieldset>label,
+.formulaire>fieldset>select,
+.formulaire>fieldset>input {
+    text-indent: 20px;
+    width: 200px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.formulaire>fieldset>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulaire>fieldset>ul>li {
+    width: 140px;
+}
+
