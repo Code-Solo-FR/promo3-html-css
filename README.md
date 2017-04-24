@@ -1,2 +1,1 @@
-# simplon
-First project for Simplon.co
+Partie HTML/CSS de la promo 3 de simplon.co Lyon
